@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        //$ is a jquery selector
+        $(document).ready(function(){
+            $("#first-h1").css("color","red");
+
+            //: is a jquery filter tag as it filter first tag among all other
+            var selected_paragraph = $('p:first');
+            selected_paragraph.css("color","blue");
+
+            var selected_paragraph2 = $('p:eq(1)');
+            selected_paragraph2.css("color","purple");
+        });
+    </script>
 </head>
 <body>
-    
+    <h1 id = "first-h1">Welcome to JQuery Basics</h1>
+    <p>This is first paragraph</p>
+    <br>
+    <p >This is second paragraph</p>
 </body>
 </html>
