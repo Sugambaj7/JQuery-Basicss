@@ -8,13 +8,18 @@
     <script>
         $(document).ready(function(){
             var btn = $('#btn');
+            var input_box = $('#input-box');
             btn.on('click', function(){
                 alert('Button Clicked !');
             })
+            input_box.on('keyup', function(){
+                alert('Key entered inside input box');
+            });
         });
     </script>
 </head>
 <body>
+    <input type="text" id= "input-box" placeholder="Write Something Here !">
     <input id="btn" type="button" value="Click Me !">
 </body>
 </html>
